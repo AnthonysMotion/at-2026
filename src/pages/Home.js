@@ -16,20 +16,19 @@ const images = [
     { src: "https://live.staticflickr.com/65535/54121875777_467e942c8e_k.jpg" },
     { src: "https://live.staticflickr.com/65535/54122725886_820b8d0b0b_k.jpg", link: "/project/nz2" },
     { src: "https://live.staticflickr.com/65535/54122726616_95d97f7413_k.jpg" },
-    { src: "https://live.staticflickr.com/65535/54123182895_e9468bd43f_k.jpg" },
-    { src: "https://live.staticflickr.com/65535/54122725366_843fd2620d_k.jpg", link: "https://example.com" },
+    //{ src: "https://live.staticflickr.com/65535/54123182895_e9468bd43f_k.jpg" },
+    //{ src: "https://live.staticflickr.com/65535/54122725366_843fd2620d_k.jpg", link: "https://example.com" },
     { src: "https://live.staticflickr.com/65535/54121876032_58edef7902_k.jpg" }
   ];
   
 
 export default function Home() {
     return (
-        <div className="home-container">
+        <div data-fade className="home-container">
             <div className="heading">
                 <div className="header-paragraphs">
                     <p className="paragraph-text">
-                        Digital Designer + Web Developer + Photographer.<br />
-                        Based in Auckland, New Zealand.<br /><br />
+                        Digital Designer + Web Developer + Photographer.<br />Based in Auckland, New Zealand.<br /><br />
                         <Link to="/portfolio">→ View portfolio</Link><br />
                         <Link to="/contact">→ Get in touch</Link>
                     </p>
