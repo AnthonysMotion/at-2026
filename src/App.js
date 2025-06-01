@@ -16,7 +16,6 @@ function App() {
 
   return (
     <Router>
-      {/* Wrap everything in this container */}
       <div ref={appRef}>
         <Navbar />
         <div style={{ minHeight: "80vh", padding: "2rem" }}>

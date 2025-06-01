@@ -29,7 +29,7 @@ export function fadeUpAllIndividual(root, options = {}) {
       stagger: 0.05,
       ease: "power3.out",
       duration: 1,
-      clearProps: "opacity,y", // Remove inline styles after animation
+      clearProps: "opacity,y",
       ...options,
     }
   );
