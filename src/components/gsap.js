@@ -4,12 +4,9 @@ function getAllIndividualElements(root) {
   const result = [];
 
   function recurse(el) {
+    result.push(el);  // add current element regardless of children
     const children = Array.from(el.children);
-    if (children.length === 0) {
-      result.push(el);
-    } else {
-      children.forEach(child => recurse(child));
-    }
+    children.forEach(child => recurse(child));
   }
 
   recurse(root);
@@ -21,12 +18,13 @@ export function fadeUpAllIndividual(root, options = {}) {
 
   const elements = getAllIndividualElements(root);
 
-  gsap.fromTo(elements,
-    { y: 30, opacity: 0 },
+  gsap.fromTo(
+    elements,
+    { y: 10, opacity: 0 },
     {
       y: 0,
       opacity: 1,
-      stagger: 0.05,
+      stagger: 0.02,
       ease: "power3.out",
       duration: 1,
       clearProps: "opacity,y",
